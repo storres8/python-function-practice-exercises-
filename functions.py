@@ -57,3 +57,15 @@ def has_33(nums):
         if nums[i] == 3 and nums[i+1] ==3:
             return True
     return False
+
+# PAPER DOLL: Given a string, return a string where for every character in the original there are three characters
+# paper_doll('Hello') --> 'HHHeeellllllooo'
+# paper_doll('Mississippi') --> 'MMMiiissssssiiissssssiiippppppiii'
+def paper_doll(text):
+  # print(list(text))
+  b=[]
+  for letter in list(text):
+    b.append(letter * 3)
+
+
+  return ''.join(b)
