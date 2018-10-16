@@ -19,3 +19,14 @@ def old_macdonald(name):
       b.append(letter.lower())
 
   return(''.join(b))
+
+# MASTER YODA: Given a sentence, return a sentence with the words reversed
+# master_yoda('I am home') --> 'home am I'
+# master_yoda('We are ready') --> 'ready are We'
+
+def master_yoda(string):
+  a = string.split()
+  a.reverse()
+  b = ' '.join(a)
+
+  return b
